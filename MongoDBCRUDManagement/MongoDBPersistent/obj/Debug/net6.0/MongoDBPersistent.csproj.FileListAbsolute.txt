@@ -1,0 +1,12 @@
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\bin\Debug\net6.0\MongoDBPersistent.deps.json
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\bin\Debug\net6.0\MongoDBPersistent.dll
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\bin\Debug\net6.0\MongoDBPersistent.pdb
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.csproj.AssemblyReference.cache
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.AssemblyInfoInputs.cache
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.AssemblyInfo.cs
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.csproj.CoreCompileInputs.cache
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.dll
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\refint\MongoDBPersistent.dll
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\MongoDBPersistent.pdb
+D:\MyGitHub\MongoDBCRUDManagement\MongoDBCRUDManagement\MongoDBPersistent\obj\Debug\net6.0\ref\MongoDBPersistent.dll

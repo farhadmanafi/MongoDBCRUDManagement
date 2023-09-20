@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MongoDBPersistent.Models;
-using MongoDBPersistent.Services;
+using MongoDBPersistent.Repositories;
 
 namespace MongoDBCRUD.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProductControllers : ControllerBase
     {
         private readonly IProductRepository _productRepository;
@@ -12,6 +14,7 @@ namespace MongoDBCRUD.Controllers
             _productRepository = productRepository;
         }
 
+        [HttpGet("GatAllProducts")]
         public async Task<IActionResult> GatAllProducts()
         {
             var products = await _productRepository.GetAllProductsAsync();
@@ -19,8 +22,8 @@ namespace MongoDBCRUD.Controllers
             return Ok(products);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get(Guid id)
+        [HttpGet("GetByProductId")]
+        public async Task<IActionResult> GetByProductId(string id)
         {
             var product = await _productRepository.GetByProductIdAsync(id).ConfigureAwait(false);
             if (product == null)
@@ -30,8 +33,8 @@ namespace MongoDBCRUD.Controllers
             return Ok(product);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(Product product)
+        [HttpPost("CreateProduct")]
+        public async Task<IActionResult> CreateProduct(Product product)
         {
             if (!ModelState.IsValid)
             {
@@ -41,8 +44,8 @@ namespace MongoDBCRUD.Controllers
             return Ok(product.Id);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(Guid id, Product product)
+        [HttpPut("UpdateProduct")]
+        public async Task<IActionResult> UpdateProduct(string id, Product product)
         {
             var productDB = await _productRepository.GetByProductIdAsync(id).ConfigureAwait(false);
             if (productDB == null)
@@ -53,8 +56,8 @@ namespace MongoDBCRUD.Controllers
             return NoContent();
         }
         
-        [HttpDelete]
-        public async Task<IActionResult> Delete(Guid id)
+        [HttpDelete("DeleteProduct")]
+        public async Task<IActionResult> Delete(string id)
         {
             var productDB = await _productRepository.GetByProductIdAsync(id).ConfigureAwait(false);
             if (productDB == null)
